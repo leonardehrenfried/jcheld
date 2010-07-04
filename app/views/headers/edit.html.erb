@@ -1,0 +1,16 @@
+<h1>Editing header</h1>
+
+<% form_for(@header) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @header %> |
+<%= link_to 'Back', headers_path %>

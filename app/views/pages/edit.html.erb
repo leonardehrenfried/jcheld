@@ -1,0 +1,28 @@
+<h1>Editing page</h1>
+
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :header %><br />
+	<% headers = Header.find(:all) %>
+    <%= f.collection_select :header_id, headers, :id, :name %>
+  </p>
+
+  <p>
+    <%= f.label :article %><br />
+    <%= f.collection_select(:article_ids, Article.find(:all), :id, :name, {}, :multiple => true)  %>
+  </p>
+  
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @page %> |
+<%= link_to 'Back', pages_path %>

@@ -1,0 +1,10 @@
+<h1>
+  <%=h @page.name %>
+</h1>
+<div style="border: 1px white solid; min-height:100px">
+	<strong>header name:</strong><%=h @page.header.name %>
+</div>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
