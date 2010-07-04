@@ -1,20 +1,5 @@
 <h1>Neue Page anlegen</h1>
 
-<% form_for(@page) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-
-  <p>Header: 
-	<% headers = Header.all() %>
-  	<%= f.collection_select :header_id, headers, :id, :name %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<%= render :partial => "form" %>
 
 <%= link_to 'Back', pages_path %>

@@ -1,0 +1,27 @@
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+	<% headers = Header.find(:all) %>
+    <%= f.collection_select :header_id, Header.find(:all), :id, :name %>
+  </p>
+
+  <p>
+    <%= f.label :layout %><br />
+    <%= f.collection_select(:layout_id, Layout.find(:all), :id, :name) %>
+  </p>
+
+  <p>
+    <%= f.label :article %><br />
+    <%= f.collection_select(:article_ids, Article.find(:all), :id, :name, {}, :multiple => true)  %>
+  </p>
+  
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>

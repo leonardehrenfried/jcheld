@@ -5,4 +5,5 @@ class Page < ActiveRecord::Base
         :join_table => "pages_articles", 
         :foreign_key => "page_id", 
         :association_foreign_key => "article_id"
+    belongs_to :layout
 end
