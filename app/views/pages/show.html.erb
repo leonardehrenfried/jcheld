@@ -2,9 +2,19 @@
   <%=h @page.name %>
 </h1>
 <div style="border: 1px white solid; min-height:100px">
-	<strong>header name:</strong><%=h @page.header.name %>
+	<ul>
+		<li><strong>header name:</strong><%=h @page.header.name %></li>
+		<li><strong>file name:</strong><%=h @page.header.file_name %></li>
+	</ul>
 </div>
 
+<h1>Layout</h1>
+<div style="border: 1px white solid; min-height:100px">
+	<ul>
+		<li><strong>layout name:</strong><%=h @page.layout.name %></li>
+		<li><strong>file name:</strong><%=h @page.layout.file_name %></li>
+	</ul>
+</div>
 
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Back', pages_path %>
