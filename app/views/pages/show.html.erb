@@ -1,9 +1,15 @@
-<div id="" class="container">
+<div class="container">
 	<header>
 		<!--<%=h @page.header.name %>-->
 		<%= render :file => @page.header.file_name %>
 		<!--/<%=h @page.header.name %>-->	
 	</header>
+	
+	<ul class="horizontal-list">
+		<% for page in Page.all %>
+			<li><%= link_to page.name, page %></li>
+		<% end %>
+	</ul>
 	
 	<h1>
 	  <%=h @page.name %>
