@@ -7,7 +7,7 @@ target/**.* #hg syntax
 target #git syntax
 dist/**.*
 *.pyc
-
+*.log
 
 #Eclipse
 .settings/*.**

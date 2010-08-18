@@ -5,7 +5,7 @@
 		<!--/<%=h @page.header.name %>-->	
 	</header>
 	
-	<ul class="horizontal-list">
+	<ul class="horizontal-list navi">
 		<% for page in Page.all %>
 			<li><%= link_to page.name, page %></li>
 		<% end %>

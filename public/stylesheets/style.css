@@ -32,19 +32,12 @@ html, body, .container{
     min-height:40%;
 }
 
-footer{
-    margin-top:-40px;
-    height:40px !important;
-    position: relative;
-    clear:both;
-}
-
-
 .horizontal-list li{
     display: inline;
     list-style-type: none;
     padding-right: 20px;
 }
+
 
 /**************************************/
 /*              HEADER                */
@@ -56,6 +49,25 @@ footer{
 /*             NAVIGATION             */
 /**************************************/
 
+.navi{
+    margin:-2.6em 0 0 0;
+}
+
+.navi li{
+    padding:0.6em;
+    margin:0.3em 3em 0.3em 0;
+}
+
+.navi li:hover{
+    background-color: #535353;
+}
+
+.navi a, .navi a:hover, .navi a:link, .navi a:visited{
+    color:white;
+}
+.navi a:hover{
+    background-color: inherit;
+}
 
 
 /**************************************/
@@ -67,4 +79,10 @@ footer{
 /**************************************/
 /*               FOOTER               */
 /**************************************/
+footer{
+    margin-top:-40px;
+    height:40px !important;
+    position: relative;
+    clear:both;
+}
 
