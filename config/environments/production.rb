@@ -26,3 +26,5 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+ENV['GEM_PATH'] = '/home/lenniboy/.gems:/usr/lib/ruby/gems/1.8'

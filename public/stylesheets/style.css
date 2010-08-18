@@ -18,6 +18,7 @@
 body{
     background-color: black !important;
     color:white;
+    font-family: Helvetica ,Arial, sans-serif;
 }
 
 /**************************************/
@@ -64,11 +65,19 @@ html, body, .container{
 
 .navi a, .navi a:hover, .navi a:link, .navi a:visited{
     color:white;
+    text-decoration:none;
 }
 .navi a:hover{
     background-color: inherit;
 }
 
+.padding-left{
+    padding-left:15px;
+}
+
+h3.padding-left{
+    border-left: 1px solid white;
+}
 
 /**************************************/
 /*            MAIN CONTENT            */

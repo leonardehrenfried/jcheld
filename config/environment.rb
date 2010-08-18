@@ -1,7 +1,9 @@
 # Be sure to restart your server when you modify this file
+#ENV['GEM_PATH'] = "/home/lenniboy/.gem:#{ENV['GEM_PATH']}"
+#ENV['GEM_HOME']="/home/lenniboy/.gem:#{ENV['GEM_HOME']}"
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
+#RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -39,3 +41,5 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+
