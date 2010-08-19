@@ -81,10 +81,11 @@ html, body, .container{
     display: block;
     padding-left:12px;
     background-color: #000;
+
 }
 
 .navi a:hover{
-    background-color: #525252;
+    background-color: #121212;
 }
 
 .padding-left{
