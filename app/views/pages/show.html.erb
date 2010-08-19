@@ -10,11 +10,12 @@
 			<li><%= link_to page.name, page %></li>
 		<% end %>
 	</ul>
-	
-	<h1>
-	  <%=h @page.name %>
-	</h1>
-	<!--<%=h @page.layout.name %>-->
-	<%= render :file => @page.layout.file_name, :locals => {:articles => @page.articles} %>
-	<!--/<%=h @page.layout.name %>-->
+	<article>
+		<h1>
+		  <%=h @page.name %>
+		</h1>
+		<!--<%=h @page.layout.name %>-->
+		<%= render :file => @page.layout.file_name, :locals => {:articles => @page.articles} %>
+		<!--/<%=h @page.layout.name %>-->
+	</article>
 </div>

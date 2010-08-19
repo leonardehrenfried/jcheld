@@ -39,6 +39,13 @@ html, body, .container{
     padding-right: 20px;
 }
 
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
 
 /**************************************/
 /*              HEADER                */
@@ -51,24 +58,33 @@ html, body, .container{
 /**************************************/
 
 .navi{
-    margin:-2.6em 0 0 0;
+    margin:-38px 0 0 0;
 }
 
 .navi li{
-    padding:0.6em;
-    margin:0.3em 3em 0.3em 0;
+    display:block;
+    margin:0 1px 0 0;
+    padding:0;
+    height: 22px;
+    width: 100px;
+    float:left;
 }
 
-.navi li:hover{
-    background-color: #535353;
+.navi li:hover;{
+    background-color: red;
 }
 
 .navi a, .navi a:hover, .navi a:link, .navi a:visited{
     color:white;
     text-decoration:none;
+    font-size:10pt;
+    display: block;
+    padding-left:12px;
+    background-color: #000;
 }
+
 .navi a:hover{
-    background-color: inherit;
+    background-color: #525252;
 }
 
 .padding-left{
@@ -83,15 +99,23 @@ h3.padding-left{
 /*            MAIN CONTENT            */
 /**************************************/
 
+article{
+    margin-top:50px;
+}
+
+article p{
+    color:#717171;
+}
 
 
 /**************************************/
 /*               FOOTER               */
 /**************************************/
 footer{
-    margin-top:-40px;
+    margin:-40px auto 20px auto;
     height:40px !important;
     position: relative;
     clear:both;
+    width:950px;
 }
 

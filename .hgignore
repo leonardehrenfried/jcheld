@@ -8,6 +8,7 @@ target #git syntax
 dist/**.*
 *.pyc
 *.log
+tmp/restart.txt
 
 #Eclipse
 .settings/*.**
