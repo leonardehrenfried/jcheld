@@ -7,6 +7,7 @@
   </p>
 
   <p>
+	<%= f.label :header %><br />
 	<% headers = Header.find(:all) %>
     <%= f.collection_select :header_id, Header.find(:all), :id, :name %>
   </p>

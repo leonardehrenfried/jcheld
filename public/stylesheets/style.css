@@ -85,7 +85,8 @@ html, body, .container{
 }
 
 .navi a:hover{
-    background-color: #121212;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
 }
 
 .padding-left{
@@ -119,4 +120,3 @@ footer{
     clear:both;
     width:950px;
 }
-
