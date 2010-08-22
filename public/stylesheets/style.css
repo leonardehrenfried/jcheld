@@ -53,7 +53,9 @@ html, body, #main-wrap{
 
 header{
     width:1009px;
+    height:460px;
     margin:0 auto;
+    display: block;
 }
 
 
@@ -62,7 +64,7 @@ header{
 /**************************************/
 
 .navi{
-    margin:-38px 0 0 0;
+    margin:-56px 0 0 0;
 }
 
 .navi li{
@@ -83,7 +85,7 @@ header{
     text-decoration:none;
     font-size:10pt;
     display: block;
-    padding-left:12px;
+    padding: 10px 0 10px 12px;
     background-color: transparent;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
 }
@@ -104,10 +106,6 @@ h3.padding-left{
 /*            MAIN CONTENT            */
 /**************************************/
 
-article{
-    margin-top:50px;
-}
-
 article p{
     color:#717171;
 }
@@ -122,4 +120,5 @@ footer{
     position: relative;
     clear:both;
     width:950px;
+    display: block;
 }
