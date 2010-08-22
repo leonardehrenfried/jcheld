@@ -2,7 +2,7 @@
 	<div class="span-8">
 		<h3 class="padding-left"><%=h article.name %></h3>
 		<p class="padding-left"> 
-			<%=h article.content %>
+			<%= article.get_content %>
 		</p>
 	</div>
 <% end %>
@@ -10,7 +10,7 @@
 <div class="span-8 last">
 	<h3 class="padding-left"><%=h articles[2].name %></h3>
 	<p class="padding-left"> 
-		<%=h articles[2].content %>
+		<%= articles[2].get_content %>
 	</p>
 	
 </div>

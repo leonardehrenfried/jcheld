@@ -1,21 +1,21 @@
-<div class="container">
+<div id="main-wrap">
+	
 	<header>
 		<!--<%=h @page.header.name %>-->
 		<%= render :file => @page.header.file_name %>
-		<!--/<%=h @page.header.name %>-->	
+		<!--/<%=h @page.header.name %>-->
+		<ul class="horizontal-list navi">
+			<% for page in Page.all %>
+				<li><%= link_to page.name, page %></li>
+			<% end %>
+		</ul>
 	</header>
-	
-	<ul class="horizontal-list navi">
-		<% for page in Page.all %>
-			<li><%= link_to page.name, page %></li>
-		<% end %>
-	</ul>
-	<article>
-		<h1>
-		  <%=h @page.name %>
-		</h1>
-		<!--<%=h @page.layout.name %>-->
-		<%= render :file => @page.layout.file_name, :locals => {:articles => @page.articles} %>
-		<!--/<%=h @page.layout.name %>-->
-	</article>
+	<div class="container">
+		<article>
+			<!--<%=h @page.layout.name %>-->
+			<%= render :file => @page.layout.file_name, :locals => {:articles => @page.articles} %>
+			<!--/<%=h @page.layout.name %>-->
+		</article>
+	</div>
+
 </div>

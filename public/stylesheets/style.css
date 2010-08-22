@@ -25,7 +25,7 @@ body{
 /*              GLOBALS               */
 /**************************************/
 
-html, body, .container{
+html, body, #main-wrap{
     height:100%;
 }
 
@@ -51,6 +51,10 @@ html, body, .container{
 /*              HEADER                */
 /**************************************/
 
+header{
+    width:1009px;
+    margin:0 auto;
+}
 
 
 /**************************************/
@@ -71,7 +75,7 @@ html, body, .container{
 }
 
 .navi li:hover;{
-    background-color: red;
+    
 }
 
 .navi a, .navi a:hover, .navi a:link, .navi a:visited{
@@ -80,13 +84,12 @@ html, body, .container{
     font-size:10pt;
     display: block;
     padding-left:12px;
-    background-color: #000;
-
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
 }
 
 .navi a:hover{
-    background-color: transparent;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
+    background-color: #000;
 }
 
 .padding-left{
