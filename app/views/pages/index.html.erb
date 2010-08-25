@@ -4,8 +4,7 @@
   <tr>
     <th>Name</th>
   </tr>
-
-<% @pages.each do |page| %>
+<% for page in Page.find(:all, :order => "navigation_order ASC") %>
   <tr>
     <td><%=h page.name %></td>
     <td><%= link_to 'Show', page %></td>

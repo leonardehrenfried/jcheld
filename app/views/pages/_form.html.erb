@@ -7,6 +7,17 @@
   </p>
 
   <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :navigation_order %>
+  </p>
+
+  <p>
+    Visible in navigation: 
+    <%= f.check_box :in_navigation %>
+  </p>
+
+
+  <p>
 	<%= f.label :header %><br />
 	<% headers = Header.find(:all) %>
     <%= f.collection_select :header_id, Header.find(:all), :id, :name %>

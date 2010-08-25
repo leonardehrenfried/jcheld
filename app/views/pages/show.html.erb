@@ -5,7 +5,7 @@
 		<%= render :file => @page.header.file_name %>
 		<!--/<%=h @page.header.name %>-->
 		<ul class="horizontal-list navi">
-			<% for page in Page.all %>
+			<% for page in Page.get_all %>
 				<li><%= link_to page.name, page %></li>
 			<% end %>
 		</ul>
@@ -13,7 +13,8 @@
 	<div class="container">
 		<article>
 			<!--<%=h @page.layout.name %>-->
-			<%= render :file => @page.layout.file_name, :locals => {:articles => @page.articles} %>
+			<%= render :file => @page.layout.file_name, :locals => 
+						{:articles => @page.articles, :secondary_articles => @page.secondary_articles} %>
 			<!--/<%=h @page.layout.name %>-->
 		</article>
 	</div>

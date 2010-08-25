@@ -11,4 +11,8 @@ class Page < ActiveRecord::Base
         :foreign_key => "page_id", 
         :association_foreign_key => "article_id"
     belongs_to :layout
+    
+    def self.get_all
+        Page.find(:all, :conditions => ['in_navigation = ?', true], :order => "navigation_order ASC")
+    end
 end

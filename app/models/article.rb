@@ -9,4 +9,12 @@ class Article < ActiveRecord::Base
     html = markdown.to_html
     return html
   end
+  
+  def get_truncated_content(chars=280)
+      temp=content[0..chars]+"..."
+      #temp=temp.join(" ")
+      markdown = RDiscount.new(temp)
+      html = markdown.to_html
+      return html
+  end
 end

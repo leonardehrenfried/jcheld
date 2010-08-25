@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100819205806) do
+ActiveRecord::Schema.define(:version => 20100824204941) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
@@ -44,6 +44,9 @@ ActiveRecord::Schema.define(:version => 20100819205806) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "layout_id"
+    t.integer  "order"
+    t.boolean  "in_navigation"
+    t.integer  "navigation_order"
   end
 
   create_table "pages_articles", :id => false, :force => true do |t|
