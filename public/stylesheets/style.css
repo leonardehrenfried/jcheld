@@ -79,6 +79,9 @@ header{
 .navi li:hover;{
     
 }
+a, a:hover, a:link, a:visited{
+    color:white !important;
+}
 
 .navi a, .navi a:hover, .navi a:link, .navi a:visited{
     color:white;
