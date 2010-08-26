@@ -133,6 +133,12 @@ article h4{
     clear:both;
     padding: 2px 5px;
     font-size: 8pt;
+    position: relative;
+    top:-25px;
+}
+
+.article, .secondary-article{
+    min-height: 180px;
 }
 
 

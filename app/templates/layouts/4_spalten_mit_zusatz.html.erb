@@ -1,21 +1,21 @@
 <% for article in articles[0..2] %>
-	<div class="span-6">
+	<div class="span-6 article-column">
 		<h3 class="padding-left"><%=h article.name %></h3>
-		<div class="padding-left"> 
+		<div class="padding-left article"> 
 			<%= article.get_truncated_content %>
-			<div class="more">
-				<a href="#">mehr</a>
-			</div>
 		</div>
-	</div>
-<% end %>
-
-<div class="span-6 last">
-	<h3 class="padding-left"><%=h secondary_articles[0].name %></h3>
-	<div class="padding-left secondary-article"> 
-		<%= secondary_articles[0].get_content %>
 		<div class="more">
 			<a href="#">mehr</a>
 		</div>
 	</div>
-</div>
+<% end %>
+
+	<div class="span-6 last">
+		<h3 class="padding-left"><%=h secondary_articles[0].name %></h3>
+		<div class="padding-left secondary-article"> 
+			<%= secondary_articles[0].get_content %>
+		</div>
+		<div class="more">
+			<a href="#">mehr</a>
+		</div>
+	</div>

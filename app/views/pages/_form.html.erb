@@ -29,8 +29,18 @@
   </p>
 
   <p>
-    <%= f.label :article %><br />
-    <%= f.collection_select(:article_ids, Article.find(:all), :id, :name, {}, :multiple => true)  %>
+    <%= f.label :article0 %><br />
+    <%= f.collection_select(:article0_id, Article.find(:all), :id, :name)  %>
+  </p>
+
+  <p>
+    <%= f.label :article1 %><br />
+    <%= f.collection_select(:article1_id, Article.find(:all), :id, :name)  %>
+  </p>
+
+  <p>
+    <%= f.label :article2 %><br />
+    <%= f.collection_select(:article2_id, Article.find(:all), :id, :name)  %>
   </p>
 
   <p>
