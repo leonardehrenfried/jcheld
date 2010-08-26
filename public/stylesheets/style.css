@@ -101,7 +101,7 @@ div.padding-left{
     margin-left:15px;
 }
 
-h3.padding-left{
+h3.padding-left, h1.padding-left{
     padding-left:15px;
     border-left: 1px solid white;
 }
@@ -139,6 +139,7 @@ article h4{
 
 .article, .secondary-article{
     min-height: 180px;
+    padding-bottom: 25px;
 }
 
 
@@ -152,4 +153,8 @@ footer{
     clear:both;
     width:950px;
     display: block;
+}
+
+footer img{
+    vertical-align:middle;
 }

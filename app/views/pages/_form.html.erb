@@ -47,7 +47,7 @@
     <%= f.label :secondary_article %><br />
     <%= f.collection_select(:secondary_article_ids, Article.find(:all), :id, :name, {}, :multiple => true)  %>
   </p>
-  
+
   <p>
     <%= f.submit 'Update' %>
   </p>

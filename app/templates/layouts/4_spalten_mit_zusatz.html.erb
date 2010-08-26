@@ -5,7 +5,7 @@
 			<%= article.get_truncated_content %>
 		</div>
 		<div class="more">
-			<a href="#">mehr</a>
+			<%= link_to "mehr", Page.find(article.view_page_id) %>
 		</div>
 	</div>
 <% end %>
@@ -16,6 +16,6 @@
 			<%= secondary_articles[0].get_content %>
 		</div>
 		<div class="more">
-			<a href="#">mehr</a>
+			<%= link_to "mehr", Page.find(secondary_articles[0].view_page_id) %>
 		</div>
 	</div>

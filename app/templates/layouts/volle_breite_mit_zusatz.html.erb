@@ -1,0 +1,18 @@
+<div class="span-18 article-column">
+	<h1 class="padding-left"><%=h articles[0].name %></h1>
+	<div class="padding-left article"> 
+		<%= articles[0].get_content %>
+	</div>
+</div>
+
+<div class="span-6 last">
+	<h3 class="padding-left"><%=h secondary_articles[0].name %></h3>
+	<div class="padding-left secondary-article"> 
+		<%= secondary_articles[0].get_content %>
+	</div>
+	<div class="more">
+		<%= link_to "mehr", Page.find(secondary_articles[0].view_page_id) %>
+	</div>
+</div>
+
+	

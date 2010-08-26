@@ -11,6 +11,12 @@
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </p>
+
+  <p>
+    <%= f.label "'more' links to..." %><br />
+    <%= f.collection_select(:view_page_id, Page.find(:all), :id, :name)  %>
+  </p>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
