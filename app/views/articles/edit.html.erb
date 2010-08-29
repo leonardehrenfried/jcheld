@@ -1,6 +1,6 @@
 <h1>Editing article</h1>
 
-<% form_for(@article) do |f| %>
+<% form_for(@article, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -15,6 +15,16 @@
   <p>
     <%= f.label "'more' links to..." %><br />
     <%= f.collection_select(:view_page_id, Page.find(:all), :id, :name)  %>
+  </p>
+  <p>
+  	<% for mugshot in @article.photos -%>
+	  <%= link_to image_tag(mugshot.public_filename(:thumb)), mugshot.public_filename %>
+	<% end -%>
+  </p>
+  <p>
+	<%= f.label "Upload a photo" %><br />
+    <%= file_field_tag "photo", :id => "photo_image", :class =>
+	"attach_photo" %>
   </p>
 
   <p>

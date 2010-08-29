@@ -1,9 +1,11 @@
 require 'rdiscount'
 
 class Article < ActiveRecord::Base
-  belongs_to :image
+  #belongs_to :image
   has_and_belongs_to_many :pages
   belongs_to :pages, :class_name=>"Page", :foreign_key=>"view_page_id"
+  
+  has_many :photos
   
   def get_content
     markdown = RDiscount.new(content.to_s)
