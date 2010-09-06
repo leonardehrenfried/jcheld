@@ -14,10 +14,14 @@
 
 <footer class="center">
 	<div class="float-left">
-		Home | Kontakt | Impressum
+		<%= link_to "Home", Page.find(4) %>|
+		<%= link_to "Kontakt", Page.find(1) %> 
 	</div>
 	<div class="float-right">
-		© www.johannesheld-c-held.de | Meet Johannes at <%= image_tag("facebook.png") %>
+		© www.johannes-c-held.de | Meet Johannes at 
+		<a href="http://www.facebook.com/home.php?#!/johannesheld?ref=sgm"> 
+			<%= image_tag("facebook.png") %>
+		</a>
 	</div>
 </footer>
 
