@@ -41,13 +41,6 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
-    
-    Photo.new(params[:photo])
-    
-    if @article.photo.save
-        flash[:notice] = 'Mugshot was successfully created.'
-    end
-    
     respond_to do |format|
       if @article.save
         format.html { redirect_to(@article, :notice => 'Article was successfully created.') }
@@ -69,13 +62,9 @@ class ArticlesController < ApplicationController
           #attached uploaded pics - an array of photos + captions
           
           if params[:photo]
-             puts "Photo found"
-             
-             #photo=Photo.new(:uploaded_data=>params[:photo]) #if image.size != 0
-             @article.photos.create!(:uploaded_data=>params[:photo]) #if image.size != 0
-             #photo.save
-             
+             @article.photos.create!(:uploaded_data=>params[:photo]) if image.size != 0
           end
+          
           format.html { redirect_to(@article, :notice => 'Article was successfully updated. [PUT]') }
           format.xml  { head :ok }
       else
