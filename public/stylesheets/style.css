@@ -1,9 +1,9 @@
 /*************************************
    WELCOME TO THE CUSTOM STYLESHEET
 --------------------------------------
-              style.css
-        BlueTrip CSS Framework
-    Put your custom styles in here.
+   style.css
+   BlueTrip CSS Framework
+   Put your custom styles in here.
 ***************************************/
 
 /**************************************/
@@ -14,11 +14,11 @@
 -           #
 -           #
 -           #
-***************************************/
+ ***************************************/
 body{
-    background-color: black !important;
-    color:white;
-    font-family: Helvetica ,Arial, sans-serif;
+  background-color: black !important;
+  color:white;
+  font-family: Helvetica ,Arial, sans-serif;
 }
 
 /**************************************/
@@ -26,25 +26,25 @@ body{
 /**************************************/
 
 html, body, #main-wrap{
-    height:100%;
+  height:100%;
 }
 
 .container{
-    min-height:40%;
+  min-height:40%;
 }
 
 .horizontal-list li{
-    display: inline;
-    list-style-type: none;
-    padding-right: 20px;
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
 }
 
 .float-left{
-    float:left;
+  float:left;
 }
 
 .float-right{
-    float:right;
+  float:right;
 }
 
 /**************************************/
@@ -52,17 +52,17 @@ html, body, #main-wrap{
 /**************************************/
 
 header{
-    width:1009px;
-    height:460px;
-    margin:0 auto;
-    display: block;
-    position:relative;
+  width:1009px;
+  height:460px;
+  margin:0 auto;
+  display: block;
+  position:relative;
 }
 
 header img{
-    position:absolute;
-    top:0;
-    z-index:0;
+  position:absolute;
+  top:0;
+  z-index:0;
 }
 
 
@@ -71,49 +71,49 @@ header img{
 /**************************************/
 
 .navi{
-    z-index: 5;
-    position:absolute;
-    top:410px;
+  z-index: 5;
+  position:absolute;
+  top:405px;
 }
 
 
 .navi li{
-    display:block;
-    margin:0 1px 0 0;
-    padding:0;
-    height: 22px;
-    width: 100px;
-    float:left;
+  display:block;
+  margin:0 1px 0 0;
+  padding:0;
+  height: 22px;
+  width: 100px;
+  float:left;
 }
 
 .navi li:hover;{
-    
+
 }
 a, a:hover, a:link, a:visited{
-    color:white !important;
+  color:white !important;
 }
 
 .navi a, .navi a:hover, .navi a:link, .navi a:visited{
-    color:white;
-    text-decoration:none;
-    font-size:10pt;
-    display: block;
-    padding: 10px 0 10px 12px;
-    background-color: transparent;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
+  color:white;
+  text-decoration:none;
+  font-size:10pt;
+  display: block;
+  padding: 10px 0 10px 12px;
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAFoEvQfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA1JREFUeNpjYGBg8AUAAFIATko91OsAAAAASUVORK5CYII=);
 }
 
 .navi a:hover{
-    background-color: #000;
+  background-color: #000;
 }
 
 div.padding-left{
-    margin-left:15px;
+  margin-left:15px;
 }
 
 h3.padding-left, h1.padding-left{
-    padding-left:15px;
-    border-left: 1px solid white;
+  padding-left:15px;
+  border-left: 1px solid white;
 }
 
 /**************************************/
@@ -121,40 +121,46 @@ h3.padding-left, h1.padding-left{
 /**************************************/
 
 article p{
-    color:#717171;
+  color:#717171;
 }
 
 article h4{
-    font-size: 10pt !important;
-    margin: 0 0 5px 0;
+  font-size: 10pt !important;
+  margin: 0 0 5px 0;
 }
 
 .secondary-article{
-    padding:8px;
+  padding:8px;
+  padding-bottom:none; 
+  height: 192px;
 }
 
 .secondary-article, .secondary-article p, .more, .more a {
-    color:white !important;
-    background-color:#202020;
+  color:white !important;
+  background-color:#202020;
 }
 
 .secondary-article img{
-    float:left;
-    padding: 3px 8px 0 0;
+  float:left;
+  padding: 3px 8px 0 0;
 }
 
 .more{
-    float:right;
-    clear:both;
-    padding: 2px 5px;
-    font-size: 8pt;
-    position: relative;
-    top:-25px;
+  float:right;
+  clear:both;
+  padding: 2px 5px;
+  font-size: 8pt;
+  position: relative;
 }
 
-.article, .secondary-article{
-    min-height: 180px;
-    padding-bottom: 25px;
+div.secondary-article + .more{
+  position:relative;
+  top:-25px;
+}
+
+.article{
+  height:182px;
+  overflow:hidden;
 }
 
 
@@ -162,14 +168,14 @@ article h4{
 /*               FOOTER               */
 /**************************************/
 footer{
-    margin:-40px auto 20px auto;
-    height:40px !important;
-    position: relative;
-    clear:both;
-    width:950px;
-    display: block;
+  margin:-40px auto 20px auto;
+  height:40px !important;
+  position: relative;
+  clear:both;
+  width:950px;
+  display: block;
 }
 
 footer img{
-    vertical-align:middle;
+  vertical-align:middle;
 }

@@ -26,7 +26,6 @@ nbactions.xml
 # Lock files used by the Emacs editor.
 .\#*
 # Temporary files used by the vim editor.
-.*.swp
 # Temporary files used by TestMate
 ._*
 # XCode user data
@@ -45,3 +44,4 @@ Thumbs.db
 # temporary folders
 syntax: regexp
 .*/te?mp/.*
+.*.swp
