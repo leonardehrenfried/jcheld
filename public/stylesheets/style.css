@@ -132,7 +132,7 @@ article h4{
 .secondary-article{
   padding:8px;
   padding-bottom:none; 
-  height: 192px;
+  height: 183px;
 }
 
 .secondary-article, .secondary-article p, .more, .more a {
@@ -146,20 +146,26 @@ article h4{
 }
 
 .more{
+  background-image: url("/images/gruenerpfeil.png");
+  background-repeat: no-repeat;
+  background-position: 8px center;
   float:right;
   clear:both;
-  padding: 2px 5px;
-  font-size: 8pt;
+  padding: 2px 10px 2px 20px;
+  font-size: 7pt;
   position: relative;
+  margin: 13px 0 15px 0;
+  clear:both;
 }
 
 div.secondary-article + .more{
   position:relative;
   top:-25px;
+  margin:0;
 }
 
 .article{
-  height:182px;
+  height:162px;
   overflow:hidden;
 }
 
