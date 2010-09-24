@@ -1,6 +1,6 @@
 syntax: glob
 
-tmp/attachment_fu/**.*
+vendor/plugins/**.*
 
 # build directories and files
 **/build/*
@@ -42,6 +42,7 @@ nbactions.xml
 Thumbs.db
 
 # temporary folders
+*.pid
 syntax: regexp
 .*/te?mp/.*
 .*.swp
