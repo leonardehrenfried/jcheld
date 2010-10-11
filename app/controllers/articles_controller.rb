@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
           #attached uploaded pics - an array of photos + captions
           
           if params[:photo]
-             @article.photos.create!(:uploaded_data=>params[:photo]) if image.size != 0
+             @article.photos.create!(:uploaded_data=>params[:photo]) #if .size != 0
           end
           
           format.html { redirect_to(@article, :notice => 'Article was successfully updated. [PUT]') }
