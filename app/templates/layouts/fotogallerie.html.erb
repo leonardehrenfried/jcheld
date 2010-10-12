@@ -1,7 +1,7 @@
 <div class="span-24 article-column">
-  <% for photo in articles[0].photos %>
-    <div>
-      <%= image_tag(photo.public_filename(:full_width)) %>
-    </div>
-  <% end %>
+  <div class="photo-gallery">
+    <% for photo in articles[0].photos %>
+      <%= image_tag(photo.public_filename(:square_thumb)) %>
+    <% end %>
+  </div>
 </div>

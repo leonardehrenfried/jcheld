@@ -169,6 +169,13 @@ div.secondary-article + .more{
   overflow:hidden;
 }
 
+.photo-gallery{
+  width:889px;
+  margin:auto;
+}
+.photo-gallery img{
+  padding:10px;
+}
 
 /**************************************/
 /*               FOOTER               */
