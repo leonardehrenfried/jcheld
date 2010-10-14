@@ -10,7 +10,8 @@ target #git syntax
 dist/**.*
 *.pyc
 *.log
-tmp/restart.txt
+tmp/**.*
+public/photos/**.*
 
 #Eclipse
 .settings/*.**
@@ -36,6 +37,7 @@ nbactions.xml
 **.docset/*
 # for those crazies using svn and hg at the same time
 *.svn*
+Gemfile.lock
 
 # Random OS stuff
 .DS_Store

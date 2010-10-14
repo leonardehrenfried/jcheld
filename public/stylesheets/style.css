@@ -174,7 +174,17 @@ div.secondary-article + .more{
   margin:auto;
 }
 .photo-gallery img{
+}
+
+.photo-gallery div.photo-box{
+  float:left;
+  width:220px;
   padding:10px;
+}
+
+.photo-gallery div a{
+  font-size:x-small;
+  clear:both;
 }
 
 /**************************************/

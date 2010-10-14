@@ -1,7 +1,12 @@
 <div class="span-24 article-column">
   <div class="photo-gallery">
     <% for photo in articles[0].photos %>
-      <%= image_tag(photo.public_filename(:square_thumb)) %>
+      <div class="photo-box">
+        <%= image_tag(photo.public_filename(:square_thumb)) %>
+        <div>
+          <a href="<%= image_path(photo.public_filename())%>">Hohe Qualität</a>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
