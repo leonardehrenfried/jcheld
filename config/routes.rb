@@ -1,6 +1,6 @@
 Jcheld3::Application.routes.draw do
   root :controller => "pages", :action => "show", :id => 4 
-  resources :pages, :articles, :layouts do  
+  resources :pages, :articles, :layouts, :headers do  
     get :detailed, :on => :member  
   end  
 

@@ -132,7 +132,8 @@ article h4{
 .secondary-article{
   padding:8px;
   padding-bottom:none; 
-  height: 183px;
+  height: 204px;
+  overflow: hidden;
 }
 
 .secondary-article, .secondary-article p, .more, .more a {
@@ -165,21 +166,15 @@ div.secondary-article + .more{
 }
 
 .article{
-  height:162px;
+  height:182px;
   overflow:hidden;
 }
 
-.photo-gallery{
-  width:889px;
-  margin:auto;
-}
-.photo-gallery img{
-}
 
 .photo-gallery div.photo-box{
   float:left;
   width:220px;
-  padding:10px;
+  padding-right:20px;
 }
 
 .photo-gallery div a{
@@ -191,7 +186,7 @@ div.secondary-article + .more{
 /*               FOOTER               */
 /**************************************/
 footer{
-  margin:-40px auto 20px auto;
+  margin:-40px auto 0 auto;
   height:40px !important;
   position: relative;
   clear:both;
