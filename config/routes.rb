@@ -1,4 +1,6 @@
 Jcheld3::Application.routes.draw do
+  devise_for :users
+
   root :controller => "pages", :action => "show", :id => 4 
   resources :pages, :articles, :layouts, :headers do  
     get :detailed, :on => :member  

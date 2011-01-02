@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', "~> 3.0.3" 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,6 +8,11 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'rdiscount'
 gem 'rmagick'
+
+# RailsAdmin
+gem 'devise' # Devise must be required before RailsAdmin
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
