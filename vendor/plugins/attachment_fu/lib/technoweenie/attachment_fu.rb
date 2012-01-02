@@ -459,7 +459,6 @@ module Technoweenie # :nodoc:
 
         if defined?(Rails) && Rails::VERSION::MAJOR >= 3
           puts 'rails 3 is there!!!!'
-          RAILS_DEFAULT_LOGGER.warn("rails 3")
           def callback_with_args(method, arg = self)
             send(method, arg) if respond_to?(method)
           end
@@ -467,7 +466,6 @@ module Technoweenie # :nodoc:
         # Only accept blocks, however
         elsif ActiveSupport.const_defined?(:Callbacks)
           # Rails 2.1 and beyond!
-          RAILS_DEFAULT_LOGGER.warn("xyz")
           def callback_with_args(method, arg = self)
             notify(method)
 
