@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rails', "~> 3.0.3" 
-
+gem 'rails', "~> 3.1.3" 
+#gem "sass-rails", "~> 3.2.0"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -34,3 +34,4 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
