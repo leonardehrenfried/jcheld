@@ -10,6 +10,7 @@ gem 'rdiscount'
 gem 'rmagick'
 
 # RailsAdmin
+gem 'fastercsv'
 gem 'devise' # Devise must be required before RailsAdmin
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
