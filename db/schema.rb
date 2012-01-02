@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110102122909) do
+ActiveRecord::Schema.define(:version => 20120102220506) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
@@ -83,6 +83,19 @@ ActiveRecord::Schema.define(:version => 20110102122909) do
     t.integer "height"
     t.integer "article_id"
   end
+
+  create_table "rails_admin_histories", :force => true do |t|
+    t.text     "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 5
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "tiles", :force => true do |t|
     t.date     "creation_date"
