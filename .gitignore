@@ -1,5 +1,3 @@
-syntax: glob
-
 vendor/plugins/**.*
 
 # build directories and files
@@ -10,7 +8,7 @@ target #git syntax
 dist/**.*
 *.pyc
 *.log
-tmp/**.*
+tmp
 public/photos/**.*
 
 #Eclipse
