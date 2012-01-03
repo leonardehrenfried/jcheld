@@ -249,8 +249,6 @@ a[href$=".rdf"],
 a[href^="aim:"] { padding:2px 22px 2px 0; margin:-2px 0; background-repeat: no-repeat; background-position: right center; }
 
 /*** EXTERNAL LINK ICONS ***/
-a[href^="http:"]          { background-image: url(../images/icons/external.png); padding-right: 14px; }
-a[href^="mailto:"]        { background-image: url(../images/icons/email.png); }
 a[href^="http:"]:visited  { background-image: url(../images/icons/visited.png); }
 
 /*** FILE LINK ICONS ***/
