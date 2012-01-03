@@ -1,48 +1,25 @@
-vendor/plugins/**.*
-
-# build directories and files
-**/build/*
-build/*
-target/**.* #hg syntax
-target #git syntax
-dist/**.*
-*.pyc
-*.log
-tmp
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
 public/photos/**.*
-
-#Eclipse
-.settings/*.**
-.classpath
-.project
-
-# Netbeans
-nb-configuration.xml
-nbactions.xml
-
-# Backup files left behind by the Emacs editor.
-*~
-# Lock files used by the Emacs editor.
-.\#*
-# Temporary files used by the vim editor.
-# Temporary files used by TestMate
-._*
-# XCode user data
-**.pbxuser
-**.mode?v?
-**.perspectivev?
-# documentation
-**.docset/*
-# for those crazies using svn and hg at the same time
-*.svn*
-Gemfile.lock
-
+public/assets
+vendor/plugins/**.*
+log
+tmp
 # Random OS stuff
 .DS_Store
 Thumbs.db
 
-# temporary folders
-*.pid
-syntax: regexp
-.*/te?mp/.*
-.*.swp
