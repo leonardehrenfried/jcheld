@@ -147,7 +147,7 @@ article h4{
 }
 
 .more{
-  background-image: url("/images/gruenerpfeil.png");
+  background-image: url("assets/gruenerpfeil.png");
   background-repeat: no-repeat;
   background-position: 8px center;
   float:right;

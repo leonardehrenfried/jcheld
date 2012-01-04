@@ -19,7 +19,8 @@ Jcheld3::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
+  config.assets.precompile += ['scaffold.css', 'style.css', 'screen.css', 'fancybox.css', 'jquery.fancybox-1.3.1.pack.js']
+  config.assets.precompile += %w(rails_admin/rails_admin.js rails_admin/rails_admin.css)
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
