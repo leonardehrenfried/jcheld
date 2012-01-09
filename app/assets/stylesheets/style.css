@@ -29,6 +29,11 @@ html, body, #main-wrap{
   height:100%;
 }
 
+#main-wrap{
+  margin-bottom: 60px;
+  overflow: auto;
+}
+
 .container{
   min-height:40%;
 }
