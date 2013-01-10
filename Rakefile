@@ -5,3 +5,7 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 Jcheld3::Application.load_tasks
+
+task :getdb do
+  sh "scp lenni.info:webapps/jcheld/db/development.sqlite3 db"
+end
