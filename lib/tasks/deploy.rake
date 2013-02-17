@@ -3,7 +3,7 @@ remote_root = "webapps/jcheld"        # for rsync deployment
 
 desc "Clears the styles, generates new ones and then deploys the theme"
 task :deploy do
-  puts "*** Prevcompiling assets ***"
+  puts "*** Pre-compiling assets ***"
   sh "bundle exec rake assets:precompile"
   puts "*** Deploying the site ***"
   sh "rsync -r --exclude=log/* --exclude=script/* --exclude=.git/* . #{ssh_user}:#{remote_root}"

@@ -10,3 +10,4 @@ task :getdb do
   sh "scp lenni.info:webapps/jcheld/db/development.sqlite3 db"
   sh "scp lenni.info:webapps/jcheld/db/production.sqlite3 db"
 end
+

@@ -175,6 +175,9 @@ div.secondary-article + .more{
   overflow:hidden;
 }
 
+.photo-gallery{
+  margin-top: 30px;
+}
 
 .photo-gallery div.photo-box{
   float:left;
