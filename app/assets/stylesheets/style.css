@@ -78,7 +78,7 @@ header img{
 .navi{
   z-index: 5;
   position:absolute;
-  top:405px;
+  top: 425px;
 }
 
 
@@ -136,7 +136,7 @@ article h4{
 
 .secondary-article{
   padding:8px;
-  padding-bottom:none; 
+  padding-bottom:none;
   height: 204px;
   overflow: hidden;
 }
