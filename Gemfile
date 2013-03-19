@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', "~> 3.1.11"
+gem 'rails', "~> 3.1.12"
 gem "json", "~> 1.7.7"
 #gem "sass-rails", "~> 3.2.0"
 # Bundle edge Rails instead:
