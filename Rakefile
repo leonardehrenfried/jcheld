@@ -11,3 +11,7 @@ task :getdb do
   sh "scp lenni.info:webapps/jcheld/db/production.sqlite3 db"
 end
 
+task :puppet do
+  sh "sudo puppet apply puppet/jcheld.pp"
+end
+
