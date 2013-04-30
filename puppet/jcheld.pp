@@ -1,5 +1,4 @@
 include apt
-class { 'apt': }
 apt::ppa { "ppa:brightbox/ruby-ng": }
 
 package { ["ruby1.9.1", "ruby1.9.1-dev", "build-essential", "imagemagick",

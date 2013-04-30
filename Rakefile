@@ -12,6 +12,6 @@ task :getdb do
 end
 
 task :puppet do
-  sh "sudo puppet apply  --modulepath=~/.puppet  puppet/jcheld.pp"
+  sh "sudo puppet apply --modulepath=/home/lenni/.puppet/modules/ puppet/jcheld.pp"
 end
 
