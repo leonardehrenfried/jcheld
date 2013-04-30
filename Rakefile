@@ -12,6 +12,6 @@ task :getdb do
 end
 
 task :puppet do
-  sh "sudo puppet apply puppet/jcheld.pp"
+  sh "sudo puppet apply  --modulepath=~/.puppet  puppet/jcheld.pp"
 end
 
