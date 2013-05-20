@@ -181,8 +181,7 @@ div.secondary-article + .more{
 
 .photo-gallery div.photo-box{
   float:left;
-  width:220px;
-  padding-right:20px;
+  padding: 33px;
 }
 
 .photo-gallery div a{

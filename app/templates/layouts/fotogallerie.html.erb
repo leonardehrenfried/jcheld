@@ -1,13 +1,10 @@
 <div class="span-24 article-column">
   <div class="photo-gallery">
-    <% for photo in articles[0].photos %>
+    <% for number in ["01", "02", "03"] %>
       <div class="photo-box">
-        <a class="fancybox" rel="photo-gallery"
-           href="<%= image_path(photo.public_filename(:page_width)) %>">
-          <%= image_tag(photo.public_filename(:square_thumb)) %>
-        </a>
+        <img src="/assets/presse-<%= number %>-small.jpg" />
         <div>
-          <a href="<%= image_path(photo.public_filename())%>">Hohe Qualität</a>
+          <a href="/assets/presse-<%= number %>.jpg">Hohe Qualität</a>
         </div>
       </div>
     <% end %>
