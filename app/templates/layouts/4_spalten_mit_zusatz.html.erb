@@ -2,7 +2,7 @@
   <div class="span-6 article-column">
     <h3 class="padding-left"><%=h article.name %></h3>
 
-    <div class="padding-left article"> 
+    <div class="padding-left article">
       <% if !article.photos.empty? -%>
         <%= image_tag(article.photos[0].public_filename(:thumb)) %>
       <% end -%>
@@ -16,7 +16,7 @@
 
 <div class="span-6 last">
   <h3 class="padding-left"><%=h secondary_articles[0].name %></h3>
-  <div class="padding-left secondary-article"> 
+  <div class="padding-left secondary-article">
     <% if !secondary_articles[0].photos.empty? -%>
       <%= image_tag(secondary_articles[0].photos[0].public_filename(:thumb)) %>
     <% end -%>
