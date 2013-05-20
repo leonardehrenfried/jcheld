@@ -12,5 +12,5 @@ file { "/etc/apache2/sites-enabled/johannes-c-held.de":
   owner  => root,
   group  => root,
   mode   => 550,
-  source => "/home/lenni/dev/config/apache2/sites-available/johannes-c-held.de"
+  source => "/home/lenni/webapps/jcheld/puppet/johannes-c-held.de"
 }

@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+  ServerName johannes-c-held.com
+  ServerAlias johannes-c-held.de
+  ServerAlias www.johannes-c-held.de
+  ServerAlias www.johannes-c-held.com
+
+
+  #Force Using Canonical Name
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} !^www\.johannes-c-held\.com$ [NC]
+  RewriteRule .* http://www.johannes-c-held.com$0 [R=301]
+
+  DocumentRoot "/home/lenni/webapps/jcheld/public"
+  <Directory /home/lenni/webapps/jcheld/public>
+    AllowOverride all
+    Options -MultiViews
+  </Directory>
+</VirtualHost>
